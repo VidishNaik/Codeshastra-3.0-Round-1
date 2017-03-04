@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.vidish.round1.ShowDetails">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image_view_detail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/text_view_name"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="NAME"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="PRICE :"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/text_view_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="COMPANIES :"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/text_view_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION :"
+            android:textSize="16sp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            >
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
